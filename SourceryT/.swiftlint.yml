@@ -1,0 +1,26 @@
+disabled_rules:
+  - type_name
+  - trailing_whitespace
+  - large_tuple
+  - cyclomatic_complexity
+  - type_body_length
+  - file_length
+
+line_length:
+  warning: 200
+  ignores_function_declarations: true
+  ignores_comments: true
+
+identifier_name:
+  excluded: 
+    - id
+    - QQ
+
+opt_in_rules:
+  - empty_count
+
+excluded:
+  - Pods
+
+function_body_length:
+  warning: 100

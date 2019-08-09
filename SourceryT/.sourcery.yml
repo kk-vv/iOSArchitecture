@@ -1,0 +1,6 @@
+sources:
+  - SourceryT/Class
+templates:
+  - Templates/AutoEquatable.stencil
+output:
+  Generated

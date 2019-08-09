@@ -1,0 +1,14 @@
+//
+//  AppStore.xcconfig
+//  SourceryT
+//
+//  Created by JuanFelix on 2019/8/8.
+//  Copyright © 2019 JuanFelix. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+#include "Public.xcconfig"
+#include "Pods/Target Support Files/Pods-SourceryT/Pods-SourceryT.release.xcconfig"
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "AppStore"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) AppStore=1

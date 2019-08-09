@@ -1,0 +1,16 @@
+//
+//  Debug.xcconfig
+//  SourceryT
+//
+//  Created by JuanFelix on 2019/8/8.
+//  Copyright © 2019 JuanFelix. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+#include "Public.xcconfig"
+#include "Pods/Target Support Files/Pods-SourceryT/Pods-SourceryT.debug.xcconfig"
+CUSTOM_BUILD_VERSION = 0.1.1
+CUSTOM_DISPLAY_NAME = SST-D
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "NETWORK_ENV_DEV"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) NETWORK_ENV_DEV=1

@@ -1,0 +1,14 @@
+//
+//  Public.xcconfig
+//  SourceryT
+//
+//  Created by JuanFelix on 2019/8/9.
+//  Copyright © 2019 JuanFelix. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+CUSTOM_BUILD_VERSION = 1.0.0
+CUSTOM_ICON_NAME = AppIcon
+CUSTOM_DISPLAY_NAME = SST
+CUSTOM_BUNDLE_IDENTIFIER = com.once.SourceryT

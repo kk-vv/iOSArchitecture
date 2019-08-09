@@ -1,0 +1,28 @@
+PODS:
+  - Sourcery (0.16.2)
+  - SwiftGen (6.1.0)
+  - SwiftLint (0.34.0)
+  - URLNavigator (2.2.0)
+
+DEPENDENCIES:
+  - Sourcery
+  - SwiftGen
+  - SwiftLint
+  - URLNavigator
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Sourcery
+    - SwiftGen
+    - SwiftLint
+    - URLNavigator
+
+SPEC CHECKSUMS:
+  Sourcery: 3f406d227efd179773b3c3599ebd1700d1a6013c
+  SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
+  SwiftLint: 79d48a17c6565dc286c37efb8322c7b450f95c67
+  URLNavigator: 0bffc3efdeb2d97f7b5eec7ac82d290f4a099431
+
+PODFILE CHECKSUM: 30b213021fb00ff2000afb24ce0dd7e131b70e14
+
+COCOAPODS: 1.7.4

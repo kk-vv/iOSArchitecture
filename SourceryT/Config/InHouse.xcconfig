@@ -1,0 +1,17 @@
+//
+//  InHouse.xcconfig
+//  SourceryT
+//
+//  Created by JuanFelix on 2019/8/8.
+//  Copyright © 2019 JuanFelix. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+#include "Public.xcconfig"
+#include "Pods/Target Support Files/Pods-SourceryT/Pods-SourceryT.inhouse.xcconfig"
+CUSTOM_DISPLAY_NAME = SST-P
+CUSTOM_ICON_NAME = AppIconB
+CUSTOM_BUNDLE_IDENTIFIER = com.once.SourceryT.inhouse
+OTHER_SWIFT_FLAGS = $(inherited)
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited)

@@ -1,0 +1,15 @@
+{# AutoEquatable Generator Template #}
+{{"//autoequatable"|uppercase}}
+{% for type in types.implementing.AutoEquatable %}
+// MARK: - {{type.name}}
+extension {{type.name}}: Equatable {
+    static func == (lhs: {{type.name}}, rhs: {{type.name}}) -> Bool {
+        {% for variable in type.storedVariables %}
+        guard lhs.{{variable.name}} == rhs.{{variable.name}} else {
+            return false
+        }
+        {% endfor %}
+        return true
+    }
+}
+{% endfor %}
