@@ -1,6 +1,6 @@
 ### iOS Swift Common Architecture
 
->meta-programming(元编程-code product code)
+>meta-programming(元编程-code write code)
 
 ```
 可以从两个层面上来理解：
