@@ -192,3 +192,6 @@ Stencil是一门用Swift实现的专门为Swift设计的模板语言
 - SwiftLint
 - URLNavigator
 - XCConfig
+- SwiftMonkey(Paws) (Test)
+- DoraemonKit
+- SwifterSwift(more than 500 native Swift extensions)
