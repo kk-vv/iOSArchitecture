@@ -1,6 +1,9 @@
+//  Created by JuanFelix on 2019/8/20.
+//  Copyright © 2019 TimesGoods. All rights reserved.
+
+// swiftlint:disable all
 {% for type in types.implementing.AutoBuildParameters %}
 // MARK: {{ type.name }} API Parameters
-// swiftlint:disable all
 extension {{ type.name }} {
     var parameters: [String: Any] {
         switch self {
