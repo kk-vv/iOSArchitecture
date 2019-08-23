@@ -12,7 +12,13 @@ extension {{ type.name }} {
         case let .{{ c.name }}({% for values in c.associatedValues %}{{ values.localName }}{% if values.localName != c.associatedValues.last.localName %}, {% endif %}{% endfor %}):
             var params = [String: Any]()
         {% for values in c.associatedValues %}
+            {% if values.typeName.name|hasSuffix:"?" %}
+            if let {{ values.localName }} = {{ values.localName }} {
+                params["{{ values.localName }}"] = {{ values.localName }}
+            }
+            {% else %}
             params["{{ values.localName }}"] = {{ values.localName }}
+            {% endif %}
         {% endfor %}
             return params
         {% else %}
