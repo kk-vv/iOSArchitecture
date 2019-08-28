@@ -14,10 +14,38 @@ extension {{ type.name }} {
         {% for values in c.associatedValues %}
             {% if values.typeName.name|hasSuffix:"?" %}
             if let {{ values.localName }} = {{ values.localName }} {
+                {% if values.isDictionary %}
+                if !{{values.localName}}.isEmpty {
+                    params["{{ values.localName }}"] = {{ values.localName }}
+                }
+                {% elif values.isArray %}
+                if !{{values.localName}}.isEmpty {
+                    params["{{ values.localName }}"] = {{ values.localName }}
+                }
+                {% elif values.typeName.name|hasPrefix:"String" %}{# 判断isString无效，Int实现了StringProtocol #}
+                if !{{values.localName}}.isEmpty {
+                    params["{{ values.localName }}"] = {{ values.localName }}
+                }
+                {% else %}
+                    params["{{ values.localName }}"] = {{ values.localName }}
+                {% endif %}
+            }
+            {% else %}
+            {% if values.isDictionary %}
+            if !{{values.localName}}.isEmpty {
+                params["{{ values.localName }}"] = {{ values.localName }}
+            }
+            {% elif values.isArray %}
+            if !{{values.localName}}.isEmpty {
+                params["{{ values.localName }}"] = {{ values.localName }}
+            }
+            {% elif values.typeName.name|hasPrefix:"String" %}
+            if !{{values.localName}}.isEmpty {
                 params["{{ values.localName }}"] = {{ values.localName }}
             }
             {% else %}
             params["{{ values.localName }}"] = {{ values.localName }}
+            {% endif %}
             {% endif %}
         {% endfor %}
             return params
